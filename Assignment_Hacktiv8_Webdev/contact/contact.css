@@ -1,0 +1,80 @@
+main {
+  background-color: #f3f3f3 !important;
+}
+
+.wrapper {
+  padding: 1.5rem 0;
+}
+
+.contact {
+  /* background-color: salmon; */
+  width: 100%;
+  padding: 1.5rem 0;
+  height: 300px;
+  display: flex;
+  flex: 3;
+}
+
+.sendMessage {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+  flex: 2;
+}
+/* ================================================== */
+.contactTo {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+.contactTo input {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+}
+
+.contactMessage textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+}
+
+/* =============================================== */
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+  flex: 2;
+}
+
+.contactList {
+  margin: 1rem 0;
+}
+
+.contactList ul {
+  margin-left: -1.8rem;
+}
+
+.contactList li {
+  display: flex;
+  gap: 10px;
+}
+
+.contactList i {
+  margin-top: 3px;
+}
+.contactList p {
+  font-size: 0.75rem;
+}
+
+@media only screen and (max-width: 750px) {
+  .contactTo {
+    gap: 0.5rem;
+    font-size: 0.7rem;
+  }
+}

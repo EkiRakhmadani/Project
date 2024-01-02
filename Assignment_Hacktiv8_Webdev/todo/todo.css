@@ -1,0 +1,90 @@
+main {
+  background-color: #f3f3f3 !important;
+  min-height: 79.2vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  gap: 1rem;
+}
+
+.todo-input {
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.todo-list {
+  min-width: 50%;
+  list-style: none;
+  padding-bottom: 2rem;
+  transition: all 0.5s ease;
+}
+
+.todo {
+  margin: 0.5rem;
+  background: #e3e3e3;
+  color: black;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem;
+  border-radius: 0.4rem;
+  transition: all 0.5s ease;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px;
+}
+
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+
+.todo li {
+  flex: 1;
+}
+
+.delete-btn,
+.done-btn {
+  background: #ba3242;
+  font-weight: 600;
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-left: 0.4rem;
+}
+
+.done-btn {
+  background: #57837b;
+}
+
+.delete-btn:hover,
+.done-btn:hover {
+  transform: translateY(-3px);
+}
+
+.remove {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+.done-todo {
+  background: #57837b;
+  color: white;
+}

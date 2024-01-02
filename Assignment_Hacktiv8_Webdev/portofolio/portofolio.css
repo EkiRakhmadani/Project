@@ -1,0 +1,43 @@
+main {
+  background-color: #f3f3f3 !important;
+}
+
+.portofolio > .container {
+  padding-top: 2rem;
+  padding-bottom: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: salmon; */
+}
+
+.portofolio .wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding-top: 2rem;
+}
+
+.filterDiv {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px;
+  border-radius: 10px;
+  width: min-content;
+  display: none;
+}
+
+.filterDiv img {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+}
+
+.filterDiv p {
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+
+.show {
+  display: block;
+}

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <link rel="stylesheet" href="home.css" />
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Web Testing</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./home.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./portofolio/portofolio.html"
+                >Portofolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./blog/blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./aboutUs/aboutUs.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact/contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./todo/todo.html">Todo</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div
+        id="carouselExampleCaptions"
+        class="container carousel slide"
+        data-bs-ride="true"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <!-- Slide1 -->
+          <div class="carousel-item active">
+            <img src="../src/bg1.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block text-box">
+              <h2 class="text-dark fw-bold">WE BELIEVE IN QUALITY DESIGN</h2>
+              <p class="text-dark fw-bold">
+                Some representative placeholder content for the first slide.
+              </p>
+              <button
+                type="button"
+                class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#modal1"
+              >
+                See More !
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="modal1"
+                tabindex="-1"
+                aria-labelledby="exampleModal1"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title text-dark" id="exampleModal1">
+                        Modal title
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <p class="text-dark">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Rem, odio!
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide2 -->
+          <div class="carousel-item">
+            <img src="../src/bg2.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block text-box">
+              <h2 class="text-warning fw-bold">WE BELIEVE IN QUALITY DESIGN</h2>
+              <p class="text-light fw-bold">
+                Some representative placeholder content for the first slide.
+              </p>
+              <button
+                type="button"
+                class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#modal2"
+              >
+                See More !
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="modal2"
+                tabindex="-1"
+                aria-labelledby="exampleModal2"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title text-dark" id="exampleModal2">
+                        Modal title
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <p class="text-dark">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Labore, sunt.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide3 -->
+          <div class="carousel-item">
+            <img src="../src/bg3.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block text-box">
+              <h2 class="text-warning fw-bold slide3">
+                WE BELIEVE IN QUALITY DESIGN
+              </h2>
+              <p class="text-dark fw-bold">
+                Some representative placeholder content for the first slide.
+              </p>
+              <button
+                type="button"
+                class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#modal3"
+              >
+                See More !
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="modal3"
+                tabindex="-1"
+                aria-labelledby="exampleModal3"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title text-dark" id="exampleModal3">
+                        Modal title
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <p class="text-dark">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Debitis, beatae.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide4 -->
+          <div class="carousel-item">
+            <img src="../src/bg4.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block text-box">
+              <h2 class="text-light fw-bold">WE BELIEVE IN QUALITY DESIGN</h2>
+              <p class="text-dark fw-bold">
+                Some representative placeholder content for the first slide.
+              </p>
+              <button
+                type="button"
+                class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#modal4"
+              >
+                See More !
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="modal4"
+                tabindex="-1"
+                aria-labelledby="exampleModal4"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title text-dark" id="exampleModal4">
+                        Modal title
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <p class="text-dark">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Error, dicta?
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <section class="cards">
+        <div class="container">
+          <div class="title">
+            <h2 class="text-warning">We Creative Quality Design</h2>
+            <p class="fw-bold">
+              We Specialize in Web Design / Development and Graphic Design
+            </p>
+          </div>
+
+          <div class="kartu">
+            <div class="row">
+              <div class="card col-md-3" style="width: 15rem">
+                <img src="../src/card1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Ipsam, natus.
+                  </p>
+                </div>
+              </div>
+              <div class="card col-md-3" style="width: 15rem">
+                <img src="../src/card2.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Maxime, porro!
+                  </p>
+                </div>
+              </div>
+              <div class="card col-md-3" style="width: 15rem">
+                <img src="../src/card3.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Provident, eligendi!
+                  </p>
+                </div>
+              </div>
+              <div class="card col-md-3" style="width: 15rem">
+                <img src="../src/card4.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Et, inventore.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section></section>
+    </main>
+
+    <footer>
+      <div class="navbar sticky-bottom bg-dark">
+        <div class="container d-flex text-light">
+          <p>
+            @ 2022
+            <span>HACKTIV8 WORKSHOP PROGRAM RIZKI RAKHMADANI RUFENDI</span>
+          </p>
+          <div class="navbar navbar-expand-lg">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a
+                  class="nav-link link-warning active"
+                  aria-current="page"
+                  href="../home/home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link link-light"
+                  href="../portofolio/portofolio.html"
+                  >Portofolio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light" href="../blog/blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light" href="../aboutUs/aboutUs.html"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light" href="../contact/contact.html"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light" href="../todo/todo.html">Todo</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

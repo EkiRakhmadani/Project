@@ -1,0 +1,41 @@
+main {
+  background-color: #f3f3f3 !important;
+}
+
+.text-box {
+  margin-bottom: 25%;
+}
+
+/* CARD */
+.kartu {
+  padding-bottom: 2rem;
+}
+.cards .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.cards .title > p {
+  margin-top: 1rem;
+}
+
+.kartu .row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.kartu .row .card {
+  border-radius: 10px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px;
+}
+.kartu img {
+  height: 12rem;
+  margin-top: 0.8rem;
+  border-radius: 10px;
+}

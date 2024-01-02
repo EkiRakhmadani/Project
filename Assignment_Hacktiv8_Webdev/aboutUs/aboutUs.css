@@ -1,0 +1,147 @@
+main {
+  background-color: #f3f3f3 !important;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 3rem;
+}
+
+.picture {
+  flex: 1;
+}
+.picture img {
+  width: 100%;
+}
+
+.text {
+  min-height: 50px;
+  flex: 2;
+  text-align: justify;
+}
+
+.text > p,
+.title > p {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.paragraph {
+  display: flex;
+  width: 100%;
+  text-align: justify;
+  gap: 1.5rem;
+}
+
+.paragraph p {
+  font-size: 0.85rem;
+}
+
+/* ======INTRO======= */
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 1.5rem;
+  background: #e3e3e3;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.barKiri,
+.barKanan {
+  padding: 1rem;
+  flex: 1;
+}
+
+/* ======BAR======= */
+
+#teams {
+  padding: 50px 0;
+  color: #555555;
+}
+
+h2 {
+  text-align: center;
+}
+
+#teams .fab {
+  color: #ff9000;
+  background-color: #ffffff;
+  padding: 4px;
+  border-radius: 50%;
+}
+
+.profile-pic {
+  margin-top: 25px;
+}
+
+.profile-pic .imgbox img {
+  filter: grayscale(1);
+}
+
+.profile-pic .imgbox img:hover {
+  filter: grayscale(0);
+}
+
+.profile-pic .imgbox ul li {
+  display: inline-block;
+  padding: 5px;
+}
+
+.profile-pic .imgbox {
+  position: relative;
+  display: block;
+}
+
+.profile-pic .imgbox ul {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 0;
+  opacity: 0;
+}
+
+.profile-pic .imgbox:hover ul {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.profile-pic h2 {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #ff9000;
+  margin-top: 15px;
+}
+
+.profile-pic h3 {
+  font-size: 0.95em;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* ======TEAMS======= */
+
+@media only screen and (max-width: 750px) {
+  .intro {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .skill {
+    padding-top: 8rem !important;
+  }
+}

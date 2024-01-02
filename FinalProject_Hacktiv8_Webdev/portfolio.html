@@ -1,0 +1,342 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Belajar Buat Web | Home :: Workshop Front End Web Development</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
+<!-- jQuery -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixitup({
+					targetSelector: '.portfolio',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+					// call the hover effect
+					onMixEnd: filterList.hoverEffect()
+				});				
+			
+			},
+			
+			hoverEffect: function () {
+			
+				// Simple parallax effect
+				$('#portfoliolist .portfolio').hover(
+					function () {
+						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+						$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+					},
+					function () {
+						$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+					}		
+				);				
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
+<!-- Add fancyBox main JS and CSS files -->
+<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+<link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
+		<script>
+			$(document).ready(function() {
+				$('.popup-with-zoom-anim').magnificPopup({
+					type: 'inline',
+					fixedContentPos: false,
+					fixedBgPos: true,
+					overflowY: 'auto',
+					closeBtnInside: true,
+					preloader: false,
+					midClick: true,
+					removalDelay: 300,
+					mainClass: 'my-mfp-zoom-in'
+			});
+		});
+		</script>
+</head>
+<body>
+  <div class="header">	
+      <div class="wrap"> 
+	         <div class="logo">
+				<a href="index.html"><img src="images/logo.png" alt=""/></a>
+			 </div>
+			 <div class="cssmenu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li class="active"><a href="portfolio.html">Portfolio</a></li> 
+					<li><a href="blog.html">Blog</a></li> 
+					<li><a href="about.html">About Us</a></li> 
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+		     </div>
+		    <div class="clear"></div>
+	   </div>
+  </div>
+    <div class="banner">
+      	<div class="wrap">
+      	    <h2>Portfolio</h2> <div class="clear"></div>
+      	</div>
+    </div>
+	<div class="main">	
+	   <div class="portfolio-top">
+		   	<div class="wrap">
+		        <h3>We Creative Quality Designs.</h3>
+				<h5>We Specialize in Web Design / Development and Graphic Design</h5>
+			</div>
+		</div>
+		<div class="container">
+		   <ul id="filters" class="clearfix">
+				 <li><span class="filter active" data-filter="app card icon logo web">All</span></li>
+				 <li><span class="filter" data-filter="app">Website</span></li>
+				 <li><span class="filter" data-filter="card">Logo</span></li>
+				 <li><span class="filter" data-filter="icon">UI Kit</span></li>
+				 <li><span class="filter" data-filter="logo">Photo</span></li>
+				 <li><span class="filter" data-filter="web">App Design</span></li>
+		   </ul>
+		   <div class="clear"></div>
+		   <div id="portfoliolist" style="     " class="">
+			<div class="wrapper">
+			<div class="portfolio logo1 mix_all" data-cat="logo" style=" ">
+				<div class="portfolio-wrapper">				
+					<a href="project.html">
+						<img src="images/pic12.jpg" alt="Image 2">
+					</a>
+					<div class="links">
+						<h4><a href="">Lorem ipsum dolor sit amet</a></h4><p class="img"><img src="images/likes.png"  title="likes" alt=""/>12</p><div class="clear"></div>
+						   <ul>
+				  			  <li><a href="#"><span>December 14, 2013</span></a></li>
+				  		   </ul>
+		  			</div>
+				</div>
+			</div>				
+			<div class="portfolio app mix_all" data-cat="app" style="  display: inline-block; opacity: 1;">
+				<div class="portfolio-wrapper">			
+					<a href="project.html">
+						<img src="images/pic13.jpg" alt="Image 2">
+					</a>
+					<div class="links">
+						<h4><a href="">Lorem ipsum dolor sit amet</a></h4><p class="img"><img src="images/likes.png"  title="likes" alt=""/>12</p><div class="clear"></div>
+							<ul>
+				  				<li><a href="#"><span>December 14, 2013</span></a></li>
+				  			</ul>
+		  			</div>
+				</div>
+			</div>		
+			<div class="portfolio web mix_all" data-cat="web" style="  display: inline-block; opacity: 1;">
+				<div class="portfolio-wrapper">						
+					<a href="project.html">
+						<img src="images/pic14.jpg" alt="Image 2">
+					</a>
+					<div class="links">
+						<h4><a href="">Lorem ipsum dolor sit amet</a></h4><p class="img"><img src="images/likes.png"  title="likes" alt=""/>12</p><div class="clear"></div>
+							<ul>
+				  				<li><a href="#"><span>December 14, 2013</span></a></li>
+				  			</ul>
+		  			</div>
+				</div>
+			</div>				
+			<div class="portfolio card mix_all" data-cat="card" style="  display: inline-block; opacity: 1;">
+				<div class="portfolio-wrapper">			
+					<a href="project.html">
+						<img src="images/pic15.jpg" alt="Image 2">
+					</a>
+					<div class="links">
+						<h4><a href="">Lorem ipsum dolor sit amet</a></h4><p class="img"><img src="images/likes.png"  title="likes" alt=""/>12</p><div class="clear"></div>
+							<ul>
+				  				<li><a href="#"><span>December 14, 2013</span></a></li>
+				  			</ul>
+		  			</div>
+				</div>
+			</div>	
+			<div class="portfolio app mix_all" data-cat="app" style="  display: inline-block; opacity: 1;">
+				<div class="portfolio-wrapper">
+					<a href="project.html">
+						<img src="images/pic16.jpg" alt="Image 2">
+					</a>
+					<div class="links">
+						<h4><a href="">Lorem ipsum dolor sit amet</a></h4><p class="img"><img src="images/likes.png"  title="likes" alt=""/>12</p><div class="clear"></div>
+							<ul>
+				  				<li><a href="#"><span>December 14, 2013</span></a></li>
+				  			</ul>
+		  			</div>
+				</div>
+			</div>			
+			<div class="portfolio card mix_all" data-cat="card" style="  display: inline-block; opacity: 1;">
+				<div class="portfolio-wrapper">			
+					<a href="project.html">
+						<img src="images/pic17.jpg" alt="Image 2">
+					</a>
+					<div class="links">
+						<h4><a href="">Lorem ipsum dolor sit amet</a></h4><p class="img"><img src="images/likes.png"  title="likes" alt=""/>12</p><div class="clear"></div>
+							<ul>
+				  				<li><a href="#"><span>December 14, 2013</span></a></li>
+				  			</ul>
+		  			</div>
+				</div>
+			</div>	
+			<div class="portfolio card mix_all" data-cat="card" style="  display: inline-block; opacity: 1;">
+				<div class="portfolio-wrapper">			
+					<a href="project.html">
+						<img src="images/pic18.jpg" alt="Image 2">
+					</a>
+					<div class="links">
+						<h4><a href="">Lorem ipsum dolor sit amet</a></h4><p class="img"><img src="images/likes.png"  title="likes" alt=""/>12</p><div class="clear"></div>
+							<ul>
+				  				<li><span><a href="#">December 14, 2013</a></span></li>
+				  			</ul>
+		  			</div>
+				</div>
+			</div>	
+			<div class="portfolio logo1 mix_all" data-cat="logo" style=" ">
+				<div class="portfolio-wrapper">			
+					<a href="project.html">
+						<img src="images/pic19.jpg" alt="Image 2">
+					</a>
+					<div class="links">
+						<h4><a href="">Lorem ipsum dolor sit amet</a></h4><p class="img"><img src="images/likes.png"  title="likes" alt=""/>12</p><div class="clear"></div>
+							<ul>
+				  				<li><span><a href="#">December 14, 2013</a></span></li>
+				  			</ul>
+		  			</div>
+				</div>
+			</div>																																							
+			<div class="portfolio app mix_all" data-cat="app" style="  display: inline-block; opacity: 1;">
+				<div class="portfolio-wrapper">			
+					<a href="project.html">
+						<img src="images/pic20.jpg" alt="Image 2">
+					</a>
+					<div class="links">
+						<h4><a href="">Lorem ipsum dolor sit amet</a></h4><p class="img"><img src="images/likes.png"  title="likes" alt=""/>12</p><div class="clear"></div>
+							<ul>
+				  				<li><span><a href="#">December 14, 2013</a></span></li>
+				  			</ul>
+		  			</div>
+				</div>
+			</div>														
+			<div class="clear"> </div>
+		</div>			
+	  </div>
+	 </div>
+	</div>
+  <div class="footer">
+	<div class="footer-top">
+	   <div class="wrap">
+		   <div class="section group">
+				<div class="col_1_of_3 span_1_of_3">
+					<h3>About Us</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<button class="btn1 btn-8 btn-8b">Learn more</button>
+					<h4>Photo Stream</h4>
+					<div class="gallery">
+						<ul>
+							<li><a class="popup-with-zoom-anim" href="#small-dialog1"><img src="images/g1.jpg" alt=""/></a></li>
+							<li><a class="popup-with-zoom-anim" href="#small-dialog1"><img src="images/g2.jpg" alt=""/></a></li>
+							<li><a class="popup-with-zoom-anim" href="#small-dialog1"><img src="images/g3.jpg" alt=""/></a></li>
+							<li><a class="popup-with-zoom-anim" href="#small-dialog1"><img src="images/g4.jpg" alt=""/></a></li>
+							<li><a class="popup-with-zoom-anim" href="#small-dialog1"><img src="images/g5.jpg" alt=""/></a></li>
+							<li><a class="popup-with-zoom-anim" href="#small-dialog1"><img src="images/g6.jpg" alt=""/></a></li>
+							 <div id="small-dialog1" class="mfp-hide">
+								<div class="pop_up">
+								 	<h2>A Sample Photo Stream</h2>
+									<img src="images/g_zoom.jpg" alt=""/>
+					  			</div>
+							</div>
+
+						</ul>
+					</div>
+				</div>
+				<div class="col_1_of_3 span_1_of_3">
+					<h3>Latest tweets</h3>
+					<div class="footer-list">
+						<ul>
+							<li><img src="images/tw.png" alt=""/><p>Lorem ipsum <span class="yellow"><a href="#">consectetuer</a></span> adipiscing elit, seddia<br><span class="small">&nbsp;web design</span></p><div class="clear"></div></li>
+							<li><img src="images/tw.png" alt=""/><p>Lorem ipsum <span class="yellow"><a href="#">consectetuer</a></span> adipiscing elit, seddia<br><span class="small">&nbsp;web design</span></p><div class="clear"></div></li>
+							<li><img src="images/tw.png" alt=""/><p>Lorem ipsum dolor sit amet, <span class="yellow"><a href="#">consectetuer</a></span> adipiscing elit, sed diam nonummy nibh<br><span class="small">&nbsp;web design</span></p><div class="clear"></div></li>
+							<li><img src="images/tw.png" alt=""/><p>Lorem ipsum dolor sit amet, <span class="yellow"><a href="#">consectetuer</a></span> adipiscing elit, sed diam nonummy nibh<br><span class="small">&nbsp;web design</span></p><div class="clear"></div></li>
+							<li><img src="images/tw.png" alt=""/><p>Lorem ipsum <span class="yellow"><a href="#">consectetuer</a></span> adipiscing elit, seddia<br><span class="small">&nbsp;web design</span></p><div class="clear"></div></li>
+						</ul>
+					</div>
+					 <div class="social-icons">	
+					 	<h4>Social Connecting</h4>
+						    <ul>	
+							  <li class="facebook"><a href="#"><span> </span></a></li>
+					          <li class="google"><a href="#"><span> </span></a></li>
+					          <li class="twitter"><a href="#"><span> </span></a></li>
+					          <li class="linkedin"><a href="#"><span> </span></a></li>	 
+					          <li class="youtube"><a href="#"><span> </span></a></li>	
+					          <li class="bloger"><a href="#"><span> </span></a></li>
+					          <li class="rss"><a href="#"><span> </span></a></li>	
+					          <li class="dribble"><a href="#"><span> </span></a></li>		        	
+					        </ul>
+				     </div>
+			    </div>
+				<div class="col_1_of_3 span_1_of_3">
+					<h3>Contact info</h3>
+					<div class="footer-list">
+						<ul>
+							<li><img src="images/address.png" alt=""/><p>Lorem ipsum dolor sit amet,consectetuer adipiscing elit, sed diam nonummy nibh<br>&nbsp;web design</p><div class="clear"></div></li>
+							<li><img src="images/phone.png" alt=""/><p>Phone: +1 800 258 2689<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+1 800 258 2689 </p><div class="clear"></div></li>
+							<li><img src="images/msg.png" alt=""/><p>Email: <span class="yellow"><a href="#">info(at)skokov.com</a></span></p><div class="clear"></div></li>
+					   </ul>
+					</div>
+					<div class="follow">
+					   <h4>Follow Us</h4>
+					   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+					   <div class="search">
+						  <form>
+							   <input type="text" value="">
+							   <input type="submit" value="">
+						  </form>
+					   </div>
+				    </div>
+				</div>
+				<div class="clear"></div>
+			</div>
+	  </div>
+	 </div>
+	 <div class="footer-bottom">
+	 	<div class="wrap">
+		 	<div class="copy">
+			     <p class="copy">© 2020<a href="https://hacktiv8.com" target="_blank">HACKTIV8 WORKSHOP PROGRAM NAMA KAMU SENDIRI</a></p>
+		    </div>
+		 	<div class="footer-nav">
+		 		<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li> 
+					<li><a href="blog.html">Blog</a></li> 
+					<li><a href="about.html">About Us</a></li> 
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+		 	</div>
+		 	<div class="clear"></div>
+	    </div>
+	</div>
+</div>
+</body>	
+</html>    		
+             		
+      	   		                                                                                            
